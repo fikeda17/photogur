@@ -9,6 +9,9 @@ get "pictures/new" => "pictures#new"
 
 get "pictures/:id" => "pictures#show", as: "picture"
 
+get 'pictures/:id/edit' => 'pictures#edit', as: "edit_picture"
+patch 'pictures/:id' => 'pictures#update'
+
   # You can have the root of your site routed with "root"
  
 
